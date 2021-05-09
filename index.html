@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/java.js"></script>
+    <title>Teste de COVID-19 online</title>
+</head>
+
+<body id="body">
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        </div>
+        <div class="logo" onmouseover="menu(aparece=1)" onmouseout="menu(aparece=0)">
+            <a href="index.html"><img src="img/logo.png" width="64px" height="64px">
+                <h1>Corona vírus</h1>
+            </a>
+        </div>
+        <div class="menu" id="menu" style="display: none;" onmouseover="menu(aparece=1)" onmouseout="menu(aparece=0)">
+            <a href=" index.html#sintomas">
+                <p>Sintomas</p>
+            </a>
+            <a href="index.html#tratamentos">
+                <p>Tratamentos</p>
+            </a>
+            <a href="index.html#prevencao">
+                <p>Prevenção</p>
+            </a>
+            <a href="index.html#teste_online">
+                <p>Teste online</p>
+            </a>
+        </div>
+    </header>
+
+    <!-- MENU FLUTUANTE-->
+    <div class="box_darkmode">
+        <input type="checkbox" id="darkmode" name="darkmode" src="java/java.js" onclick="darkmode(aparece=0)">
+        <input type="color" id="cor" name="color" src="java/java.js" onchange="cores()">
+    </div>
+
+    <!-- CONTEÚDO -->
+    <div class="info">
+        <div class="sintomas">
+            <h1 id="sintomas">Sintomas:</h1>
+            <p>Mais comuns:</p>
+            <ul>
+                <li>Febre</li>
+                <li>Tosse seca</li>
+                <li>Cansaço</li>
+            </ul>
+            <p>Menos comuns:</p>
+            <ul>
+                <li>Tensão e dores musculares</li>
+                <li>Dores de garganta</li>
+                <li>Diarreia</li>
+                <li>Conjuntivite</li>
+                <li>Dor de cabeça</li>
+                <li>Perda de paladar ou olfato</li>
+                <li>Irritações na pele ou descoloração dos dedos das mãos ou dos pés</li>
+            </ul>
+            <p>Graves:</p>
+            <ul>
+                <li>Dificuldade respiratória ou falta de ar</li>
+                <li>Pressão ou dor no peito</li>
+                <li>Perda da fala ou capacidade motora</li>
+            </ul>
+            <p><br>Anda sentindo alguns desses sintomas? Faça seu teste online, <a href="index.html#teste_online">clicando aqui!</a></p>
+        </div>
+        <div class="tratamentos">
+            <h1 id="tratamentos">Tratamentos:</h1>
+            <p>Se se sentir doente, deve descansar, beber bastantes líquidos e fazer uma alimentação nutritiva. Fique numa divisão separada de outros familiares e, se possível, utilize uma casa de banho exclusiva. Limpe e desinfete as superfícies em que
+                toca frequentemente.<br> Todas as pessoas devem manter um estilo de vida saudável em casa. Faça uma dieta saudável, durma, mantenha-se ativo e socialize com entes queridos através do telefone ou da Internet. As crianças precisam de carinho
+                e atenção adicionais por parte dos adultos durante alturas difíceis. Mantenha rotinas e horários regulares tanto quanto possível.<br> É normal sentir tristeza, tensão ou desorientação durante uma crise. Falar com pessoas em quem confia,
+                como amigos e familiares, pode ajudar. Se sentir que a situação é demasiado para si, fale com um conselheiro ou um profissional de saúde.</p>
+        </div>
+        <div class="prevencao">
+            <h1 id="prevencao">Prevenção:</h1>
+            <ul>
+                <li>Lave frequentemente as mãos. Utilize água e sabão, ou uma solução à base de álcool.</li>
+                <li>Mantenha uma distância segura de qualquer pessoa que estiver a espirrar ou tossir.</li>
+                <li>Use máscara sempre que o distanciamento físico não for possível.</li>
+                <li>Não toque nos olhos, no nariz ou na boca.</li>
+                <li>Cubra o nariz e a boca com o cotovelo fletido ou um lenço quando tossir ou espirrar.</li>
+                <li>Se se sentir doente, fique em casa.</li>
+                <li>Se tiver febre, tosse e dificuldade respiratória, procure assistência médica.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="teste">
+        <h1 id="teste_online">Teste online:</h1>
+        <form name="teste_covid">
+            <span id="teste_opc"><input type="checkbox" id="s1" name="sint1" onclick="sintomas()"><label>Febre</label></span>
+            <span id="teste_opc"><input type="checkbox" id="s2" name="sint2" onclick="sintomas()"><label>Tosse seca</label></span>
+            <span id="teste_opc"><input type="checkbox" id="s3" name="sint3" onclick="sintomas()"><label>Cansaço</label></span>
+
+
+
+            <span id="teste_opc"><input type="checkbox" id="s4" name="sint4" onclick="sintomas()"><label>Tensão e dores musculares</label></span>
+            <span id="teste_opc"><input type="checkbox" id="s5" name="sint5" onclick="sintomas()"><label>Dores de garganta</label></span>
+            <span id="teste_opc"><input type="checkbox" id="s6" name="sint6" onclick="sintomas()"><label>Diarreia</label></span>
+            <span id="teste_opc"><input type="checkbox" id="s7" name="sint7" onclick="sintomas()"><label>Conjuntivite</label></span>
+            <span id="teste_opc"><input type="checkbox" id="s8" name="sint8" onclick="sintomas()"><label>Dor de cabeça</label></span>
+            <span id="teste_opc"><input type="checkbox" id="s9" name="sint9" onclick="sintomas()"><label>Perda de paladar ou olfato</label></span>
+            <span id="teste_opc"><input type="checkbox" id="s10" name="sint10" onclick="sintomas()"><label>Irritações na pele ou descoloração dos dedos das mãos ou dos pés</label></span>
+
+
+
+            <span id="teste_opc"><input type="checkbox" id="s11" name="sint11" onclick="sintomas()"><label>Dificuldade respiratória ou falta de ar</label></span>
+            <span id="teste_opc"><input type="checkbox" id="s12" name="sint12" onclick="sintomas()"><label>Pressão ou dor no peito</label></span>
+            <span id="teste_opc"><input type="checkbox" id="s13" name="sint13" onclick="sintomas()"><label>Perda da fala ou capacidade motora</label></span>
+
+
+
+            <span id="btn_enviar"><input type="button" name="enviar" value="Enviar" id="btn" src="js/java.js" onclick="sintomas(enviar=1)"></span>
+            <span id="btn_reset"><input type="reset" name="refazer" value="Refazer" id="btn" src="js/java.js" onclick="sintomas(enviar=0)"></span>
+        </form>
+        <h1 id="text">Possibilidade de estar contaminado:</h1>
+        <div class="result">
+            <span id="result1"><p>BAIXO - Tudo dentro do normal! Há poucas chances de estar contaminado.</p></span>
+            <span id="result2"><p>MÉDIO - Há algo fora do normal! Por favor dê uma olhada na área de <a href="index.html#tratamentos">tratamentos</a> e na de <a href="index.html#prevencao ">prevenção!</a></p></span>
+            <span id="result3"><p>ALTO - Altas chances de estar contaminado! Procure um médico com urgência!</p></span>
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <!--</div>
+    <div class="container_contato ">
+        <footer>
+            <ul>
+                <li><img src="img/logo.png "></li>
+                <li><p>Contato: <strong>(12) 99848-0954</strong></p></li>
+                <li><p>Email: boca.aberta@games.com<p></li>
+            </ul>
+        </footer>
+    </div>-->
+</body>
+
+</html>

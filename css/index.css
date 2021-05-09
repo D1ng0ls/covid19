@@ -1,0 +1,326 @@
+/*CONFIGURAÇÕES GERAIS DO SITE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    margin: 25px;
+    font-weight: 700;
+    font-family: opensans, opensans-bastian, Arial;
+    letter-spacing: -2.5px!important;
+    line-height: 44px!important;
+    color: #c5221f;
+    font-size: 2.2em;
+}
+
+p {
+    margin: 25px;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    font-size: 1.4em;
+    font-family: opensans, opensans-bastian, Arial;
+}
+
+li {
+    margin-left: 25px;
+    margin-right: 25px;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    font-size: 1.4em;
+    font-family: opensans, opensans-bastian, Arial;
+}
+
+label {
+    margin-right: 25px;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    font-size: 1.4em;
+    font-family: opensans, opensans-bastian, Arial;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+    border-bottom: 4px red solid;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    height: 98px;
+}
+
+
+/*área da logo*/
+
+.logo {
+    margin: 0px;
+    width: 100%;
+    height: 64px;
+    background-color: #c5221f;
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    border: none;
+}
+
+.logo a h1 {
+    display: inline-flex;
+    color: white;
+    font-family: monospace;
+    font-size: 64px;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.logo a img {
+    width: 56px;
+    height: 56px;
+    margin: 0px;
+    margin-top: 4px;
+}
+
+
+/*área do menu*/
+
+.menu {
+    display: inline-block;
+    background-color: darkgrey;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+}
+
+.menu a {
+    margin: 0px;
+}
+
+.menu:hover {
+    background-color: grey;
+}
+
+.menu a p {
+    display: inline-block;
+    margin: 4px;
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+.box_darkmode {
+    display: inline-flex;
+    position: fixed;
+    margin: 50px;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+
+.box_darkmode input {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    font-size: 1.25em;
+}
+
+.box_darkmode label {
+    margin-right: 15px;
+}
+
+.info {
+    display: block;
+    background-color: gainsboro;
+    width: 65%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    border-radius: 10px;
+}
+
+.info ul {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.info a {
+    text-decoration: underline;
+    border: none;
+    color: #c5221f;
+}
+
+.sintomas {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px black dashed;
+    text-align: justify;
+}
+
+.tratamentos {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px black dashed;
+    border-top: 1px black dashed;
+    text-align: justify;
+}
+
+.prevencao {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px black dashed;
+    text-align: justify;
+}
+
+.teste {
+    display: inline-block;
+    background-color: gainsboro;
+    width: 65%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    border-radius: 10px;
+}
+
+.teste form {
+    display: inline-block;
+    margin: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.teste input {
+    width: 1.4em;
+    height: 1.4em;
+    margin-left: 25px;
+}
+
+.teste p {
+    display: inline-block;
+    margin: 0px;
+    margin-left: 5px;
+}
+
+#teste_opc {
+    display: inline-block;
+    width: 100%;
+}
+
+#btn_enviar {
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+#btn_reset {
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+#btn {
+    background-color: #c5221f;
+    width: 128px;
+    height: 48px;
+    margin: 50px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    font-size: 1.4em;
+    font-family: opensans, opensans-bastian, Arial;
+}
+
+#text {
+    display: none;
+}
+
+.result {
+    margin: 25px;
+}
+
+.result p {
+    margin: 25px;
+}
+
+#result1 {
+    display: none;
+    background-color: greenyellow;
+    width: 100%;
+    border-radius: 8px;
+}
+
+#result2 {
+    display: none;
+    background-color: rgb(255, 238, 85);
+    width: 100%;
+    border-radius: 8px;
+}
+
+#result2 a {
+    text-decoration: underline;
+    border: none;
+    color: #c5221f;
+}
+
+#result3 {
+    display: none;
+    background-color: tomato;
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/*área do rodapé do site*/
+
+.container_contato {
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    background-color: #363636;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    clear: both;
+}
+
+.container_contato ul {
+    padding: 0px;
+    margin: 0px;
+    border: solid 2px black;
+    border-bottom-color: transparent;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.container_contato ul li {
+    display: inline;
+}
+
+.container_contato ul li p {
+    color: white;
+    margin: 10px;
+    font-family: Century Schoolbook;
+}
+
+.container_contato ul li img {
+    margin-right: 10px;
+    float: left;
+    height: 64px;
+    width: 64px;
+    margin: 10px;
+}
